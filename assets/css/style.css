@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital@1&family=Borel&family=Glass+Antiqua&family=Zen+Maru+Gothic:wght@500&display=swap');
+
+
+*{
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #dedcd7;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    line-height: 2;
+    font-family: 'Glass Antiqua', cursive;
+    color: #202427;
+}
+
+p{
+    font-family: 'Archivo', sans-serif;
+    color: #202427;
+}
+
+/* navbar */
+.navbar{
+    --bs-navbar-padding-y: 0rem !important;
+    font-family: 'Archivo', sans-serif;
+}
+
+.nav-link{ 
+    color: #b8a582 !important;
+}
+
+.active{
+    color: #202427 !important;
+}
+
+.nav-link:hover{
+    color: #202427 !important;
+}
+
+.icon-flag img:hover{
+    opacity: 0.8;
+}
+
+/* headbanner */
+#home-head-banner{
+    background: url('../pictures/69183020_957273707959737_4960386417611919582_n.jpg')rgba(0,0,0,0.4);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+#about-head-banner{
+    background: url('../pictures/81998834_2557929291114124_8857717478222893441_n.jpg')rgba(0,0,0,0.4);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+#gallery-head-banner{
+    background: url('../pictures/61165656_2543073842379014_3822940092602118932_n.jpg')rgba(0,0,0,0.4);
+    background-size: cover;
+    background-position: bottom;
+    background-blend-mode: multiply;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+#contact-head-banner{
+    background: url('../pictures/130768305_419140269127512_4392590372978058253_n.jpg')rgba(0,0,0,0.4);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.text-start h2{
+    padding-top: 25% !important;
+}
+
+/* about section */
+.about-flex{
+    display: flex;                  
+    flex-direction: row;
+}
+
+.parent {
+    width: 800px;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 600px;
+    overflow: hidden;
+}
+
+.image1{
+    position: relative;
+    top: 80px;
+    left: 50px;
+    box-shadow: 10px 10px #cdb891;
+    border-radius: 5px;
+}
+
+.image2{
+    position: relative;
+    top: 200px;
+    left: 13px;
+    box-shadow: 10px 10px #cdb891;
+    border-radius: 5px;
+}
+
+.about-info{
+    width: 800px;
+}
+
+b{
+    color: #b8a582;
+}
+
+.btn-primary{
+    background-color: #cdb891 !important;
+    border-color: #cdb891 !important;
+    box-shadow: 10px 10px lightgray;
+}
+
+.btn-primary:hover{
+    opacity: 0.8;
+    zoom: 115%;
+}
+
+.aboutPageFirstImage{
+    box-shadow: 10px 10px #cdb891;
+    border-radius: 5px;
+    width: 30%;
+    margin-left: 15%;
+}
+
+.aboutPageSecondImage{
+    box-shadow: 10px 10px #cdb891;
+    border-radius: 5px;
+    width: 44%;
+    margin-left: 15%;
+}
+
+.aboutPageThirdImage{
+    box-shadow: 10px 10px #cdb891;
+    border-radius: 5px;
+    width: 25%;
+    margin-left: 25%;
+    margin-right: 5%;
+}
+
+.about-info2, .about-info4{
+    width: 600px;
+}
+
+.about-info3{
+    width: 600px;
+    margin-left: 15%;
+}
+
+@media (max-width: 994px){
+    .btn-primary{
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 800px){
+    .aboutPageFirstImage, .aboutPageSecondImage, .aboutPageThirdImage{
+        visibility: hidden;
+    }
+
+    .about-info2, .about-info4{
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 465px) {
+    .parent {
+        visibility: hidden;
+    }
+
+    .about-info{
+        margin-right: 25%;
+    }
+
+    .btn-primary{
+        margin-bottom: 10px;
+    }
+}
+
+/* gallery section */
+#gallery-section{
+    background-color: #ded1ba;
+}
+
+/* review section */
+
+.review-time{
+    font-size: 13px;
+    color: #40464b;
+}
+
+.card{
+    width: 400px;
+    font-family: sans-serif;
+    font-size: 15px;
+    position: relative;
+    left: 3%;
+    padding: 40px;
+    box-shadow: 10px 10px lightgray;
+    background-color: #cdb891;
+    border-color: #cdb891;
+    margin-bottom: 20px;
+}
+
+.card-section{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+@media (max-width: 1290px) {
+    .card-section {
+        grid-template-columns: auto;
+    }
+    .card{
+        left: 0%;
+    }
+}
+
+@media (max-width: 400px) {
+    .card{
+        left: -12%;
+    }
+}
+
+/* footer section */
+.changeLinkColor{
+    color: #b8a582 !important;
+}
+
+.colorChange{
+    color: #202427;
+}
+
+.changeColor{
+    color: #202427;
+}
+
+/* inspirational quotes */
+.inspirationalQuote{
+    font-family: 'Zen Maru Gothic', serif;
+}
